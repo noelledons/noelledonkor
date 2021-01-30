@@ -1,0 +1,471 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  /* color: #11999E;
+  color: #66BFBF;
+  color:  #EAF6F6; */
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Heading */
+.big-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu';
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-items {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Montserrat';
+  font-weight: 100;
+}
+
+/* Title Section */
+#title {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.fullstop {
+  color: #66BFBF;
+}
+
+.welcome {
+  display: inline-block;
+}
+
+.welcome span {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  animation: animate 10s linear infinite;
+  opacity: 0;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  2% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  18% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  20% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+
+.welcome span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.welcome span:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.welcome span:nth-child(3) {
+  animation-delay: 4s;
+}
+
+.welcome span:nth-child(4) {
+  animation-delay: 6s;
+}
+
+.welcome span:nth-child(5) {
+  animation-delay: 8s;
+}
+
+/* Tech Stack */
+#skills-section {
+  padding: 3% 0 7%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+#skills-section .container-fluid {
+  padding: 5% 20% 0% 20%;
+}
+
+.tech-stack {
+  position: relative;
+  width: 160px;
+  height: 50px;
+  line-height: 48px;
+  background: #000;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0004); */
+  -webkit-box-reflect: none;
+}
+
+.tech-stack1 {
+  position: relative;
+  display: block;
+  top: 1px;
+  left: 1px;
+  right: 1px;
+  bottom: 1px;
+  text-align: center;
+  background: #0C0C0C;
+  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.2);
+  transition: 0.5s;
+  z-index: 1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tech-stack:hover::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 101.5%;
+  height: 100%;
+  background: linear-gradient(45deg, #FB0094, #00F, #0F0, #FF0, #F00, #FB0094, #00F, #0F0, #FF0, #F00);
+  background-size: 400%;
+  transition: opacity .3s ease-in-out;
+  animation: pulse 20s linear infinite;
+}
+
+.tech-stack:hover::after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 101.5%;
+  height: 100%;
+  background: linear-gradient(45deg, #FB0094, #00F, #0F0, #FF0, #F00, #FB0094, #00F, #0F0, #FF0, #F00);
+  background-size: 400%;
+  filter: blur(20px);
+  transition: opacity .3s ease-in-out;
+  animation: pulse 2ps linear infinite;
+}
+
+.tech-stack:hover:active:before,
+.tech-stack:hover:active:after {
+  opacity: 1;
+}
+
+@@keyframes pulse {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 300% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.tech-stack1:hover:active {
+  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 1);
+}
+
+.tech-stack1::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Projects */
+#projects {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+
+#projects .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+#projects h2 {
+  padding-top: 5%;
+  padding-bottom: 1%;
+}
+
+.viewmore {
+  padding-top: 40px;
+}
+
+.btn {
+  background-color: #66BFBF;
+  color: #fff;
+  border-color: #66BFBF;
+}
+
+.project-img:hover {
+  transform: translateY(15px);
+}
+
+.project-img:hover:before {
+  opacity: 1;
+}
+
+.project-img:hover .hover-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-img:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #1a1a1a, transparent);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.project-img .hover-text {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: 0.5s;
+  margin-top: -127px;
+}
+
+.hover-text h3 {
+  font-size: 1.3rem;
+}
+
+.hover-text a {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 5px;
+}
+
+/* Footer */
+#footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+#footer .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.social-icon {
+  margin: 20px 10px;
+  font-size: 1.5rem;
+}
+
+/* Media Queries */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+ }
+
+/* Custom styling */
+@media (min-width: 576px) and (max-width: 640px) {
+
+  .tech-stack {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    line-height: 48px;
+    background: #000;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0004); */
+    -webkit-box-reflect: none;
+  }
+
+  .tech-stack1 {
+    position: relative;
+    display: block;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    text-align: center;
+    background: #0C0C0C;
+    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
+    z-index: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .tech-stack:hover::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101.5%;
+    height: 100%;
+    background: linear-gradient(45deg, #FB0094, #00F, #0F0, #FF0, #F00, #FB0094, #00F, #0F0, #FF0, #F00);
+    background-size: 400%;
+    transition: opacity .3s ease-in-out;
+    animation: pulse 20s linear infinite;
+  }
+
+  .tech-stack:hover::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101.5%;
+    height: 100%;
+    background: linear-gradient(45deg, #FB0094, #00F, #0F0, #FF0, #F00, #FB0094, #00F, #0F0, #FF0, #F00);
+    background-size: 400%;
+    filter: blur(20px);
+    transition: opacity .3s ease-in-out;
+    animation: pulse 2ps linear infinite;
+  }
+
+  .tech-stack:hover:active:before,
+  .tech-stack:hover:active:after {
+    opacity: 1;
+  }
+
+  @@keyframes pulse {
+    0% {
+      background-position: 0 0;
+    }
+
+    50% {
+      background-position: 300% 0;
+    }
+
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+  .tech-stack1:hover:active {
+    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .tech-stack1::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #skills-section .container-fluid {
+    padding: 7% 35%;
+  }
+
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #skills-section .container-fluid {
+    padding: 7% 2%;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #skills-section .container-fluid {
+    padding: 7% 10%;
+  }
+
+ }
+
+ /* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #skills-section .container-fluid {
+    padding: 7% 12%;
+  }
+}
