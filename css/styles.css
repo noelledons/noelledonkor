@@ -1,9 +1,8 @@
 body {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  /* color: #11999E;
-  color: #66BFBF;
-  color:  #EAF6F6; */
+  margin:0;
+  padding:0;
 }
 
 .container-fluid {

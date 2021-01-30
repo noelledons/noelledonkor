@@ -1,9 +1,8 @@
 body {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  /* color: #11999E;
-  color: #66BFBF;
-  color:  #EAF6F6; */
+  margin: 0;
+  padding: 0;
 }
 
 .container-fluid {
@@ -95,7 +94,7 @@ p {
 }
 
 #websitework .container-fluid {
-  padding: 3% 10% 7%;
+  padding: 3% 15% 7%;
 }
 
 #websitework h2 {
@@ -103,9 +102,9 @@ p {
   padding-bottom: 1%;
 }
 
-.project-text{
-padding-left: 20%;
-text-align: left;
+.project-text {
+  padding: 0 13%;
+  text-align: left;
 }
 
 /*Other Projects */
@@ -116,7 +115,7 @@ text-align: left;
 }
 
 #other-projects .container-fluid {
-  padding: 3% 10% 7%;
+  padding: 3% 15% 7%;
 }
 
 #other-projects h2 {
@@ -151,47 +150,40 @@ text-align: left;
 .directory {
   text-align: center;
   margin-top: 70px;
-  margin-bottom:0;
+  margin-bottom: 0;
   padding-left: 15%;
-  padding-right:10%
+  padding-right: 10%
 }
 
-
 /* Small devices (landscape phones, 576px and up) */
-
 @media (min-width: 576px) {
   #websitework .container-fluid {
     padding: 3% 1% 7%;
   }
+
   #other-projects .container-fluid {
     padding: 3% 1% 7%;
   }
-
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-
   #websitework .container-fluid {
-    padding: 3% 1% 7%;
+    padding: 3% 5% 7%;
   }
 
   #other-projects .container-fluid {
-    padding: 3% 1% 7%;
+    padding: 3% 5% 7%;
   }
-
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
   #websitework .container-fluid {
-    padding: 3% 1% 7%;
+    padding: 3% 15% 7%;
   }
 
   #other-projects .container-fluid {
-    padding: 3% 1% 7%;
+    padding: 3% 15% 7%;
   }
-
-
 }
