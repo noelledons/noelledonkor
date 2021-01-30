@@ -369,7 +369,7 @@ p {
   }
 
   .tech-stack:hover::after {
-    filter: blur(3px);
+    filter: blur(0px);
   }
 
 
