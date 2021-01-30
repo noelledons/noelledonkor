@@ -22,7 +22,6 @@ p {
   color: #8f8f8f;
 }
 
-
 /* Navigation Bar */
 
 .navbar {
@@ -42,7 +41,7 @@ p {
 .nav-link {
   font-size: 1.2rem;
   font-family: 'Montserrat';
-  font-weight: 100;
+  font-weight: 200;
 }
 
 /* Title */
@@ -76,31 +75,32 @@ p {
 /* About */
 
 #about .container-fluid {
-  padding-bottom: 70px;
+  padding: 10% 15% 6% 15%;
 }
 
 .about-img {
   border-radius: 50%;
 }
 
-#img-1 .container-fluid {
-  padding-top: 70px;
+.img-fluid {
+  padding: 5% 15%;
 }
 
 #text-box{
   padding: 0 15%;
 }
 
-/* Card Text */
 
-.card-text {
-  font-size: 14px;
+/* Awards */
+
+#img-1 h4 {
+padding-top: 3%;
 }
 
-.card {
-  border: 0;
-  padding: 0 20px;
+#img-1 p {
+  padding: 2% 5%;
 }
+
 /* Footer */
 
 #footer{
@@ -116,4 +116,73 @@ p {
 .social-icon {
   margin: 20px 10px;
   font-size: 1.5rem;
+}
+
+
+/* Media Queries */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .about-img {
+    margin-bottom: 5%;
+  }
+
+  #text-box{
+    padding: 0 6%;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .project-text {
+    font-size: 12px;
+  }
+
+  #title {
+    padding-bottom: 8%;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .about-img {
+    margin-bottom: 5%;
+  }
+
+  #text-box{
+    padding: 0 10%;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+  .project-text {
+    font-size: 12px;
+  }
+
+  #title {
+    padding-bottom: 8%;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  #img-1 .container-fluid {
+    padding: 7% 9%;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .project-text {
+    font-size: 12px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
 }

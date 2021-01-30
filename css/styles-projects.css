@@ -22,6 +22,11 @@ p {
   color: #8f8f8f;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Navigation Bar */
 .navbar {
   padding: 0 0 2.5rem;
@@ -40,7 +45,7 @@ p {
 .nav-link {
   font-size: 1.2rem;
   font-family: 'Montserrat';
-  font-weight: 100;
+  font-weight: 200;
 }
 
 /* Title */
@@ -88,13 +93,14 @@ p {
 }
 
 #websitework {
+  padding-top: 2%;
   background-color: #fff;
   color: #000;
   text-align: center;
 }
 
 #websitework .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 10% 15% 7%;
 }
 
 #websitework h2 {
@@ -103,19 +109,21 @@ p {
 }
 
 .project-text {
-  padding: 0 13%;
-  text-align: left;
+position: relative;
+padding: 0 10%;
+
 }
 
 /*Other Projects */
 #other-projects {
+  padding-top: 2%;
   background-color: #fff;
   color: #000;
   text-align: center;
 }
 
 #other-projects .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 10% 15% 7%;
 }
 
 #other-projects h2 {
@@ -155,6 +163,15 @@ p {
   padding-right: 10%
 }
 
+/* Media Queries */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #title {
+    padding-bottom: 8%;
+  }
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   #websitework .container-fluid {
@@ -164,26 +181,24 @@ p {
   #other-projects .container-fluid {
     padding: 3% 1% 7%;
   }
+
+  #title {
+    padding-bottom: 8%;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
   #websitework .container-fluid {
-    padding: 3% 5% 7%;
+    padding: 3% 1% 7%;
   }
 
   #other-projects .container-fluid {
-    padding: 3% 5% 7%;
+    padding: 3% 1% 7%;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  #websitework .container-fluid {
-    padding: 3% 15% 7%;
-  }
 
-  #other-projects .container-fluid {
-    padding: 3% 15% 7%;
-  }
 }

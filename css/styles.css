@@ -54,7 +54,7 @@ p {
 .nav-link {
   font-size: 1.2rem;
   font-family: 'Montserrat';
-  font-weight: 100;
+  font-weight: 200;
 }
 
 /* Title Section */
@@ -133,7 +133,7 @@ p {
 
 /* Tech Stack */
 #skills-section {
-  padding: 3% 0 7%;
+  padding: 4.5% 0% 7%;
   background-color: #000;
   color: #fff;
   text-align: center;
@@ -153,7 +153,6 @@ p {
   font-size: 15px;
   letter-spacing: 2px;
   text-decoration: none;
-  /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0004); */
   -webkit-box-reflect: none;
 }
 
@@ -183,7 +182,7 @@ p {
   height: 100%;
   background: linear-gradient(45deg, #FB0094, #00F, #0F0, #FF0, #F00, #FB0094, #00F, #0F0, #FF0, #F00);
   background-size: 400%;
-  transition: opacity .3s ease-in-out;
+  transition: opacity .5s ease-in-out;
   animation: pulse 20s linear infinite;
 }
 
@@ -196,9 +195,9 @@ p {
   height: 100%;
   background: linear-gradient(45deg, #FB0094, #00F, #0F0, #FF0, #F00, #FB0094, #00F, #0F0, #FF0, #F00);
   background-size: 400%;
-  filter: blur(20px);
-  transition: opacity .3s ease-in-out;
-  animation: pulse 2s linear infinite;
+  filter: blur(10px);
+  transition: opacity .5s ease-in-out;
+  animation: pulse 20s linear infinite;
 }
 
 .tech-stack:hover:active:before,
@@ -238,6 +237,7 @@ p {
 
 /* Projects */
 #projects {
+  padding: 4.5% 0% 7%;
   background-color: #fff;
   color: #000;
   text-align: center;
@@ -340,17 +340,26 @@ p {
 }
 
 /* Media Queries */
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {}
 
-/* Custom styling */
-@media (min-width: 576px) and (max-width: 640px) {
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #skills-section {
+    padding-top: 8%;
+  }
+
+  #skills-section .container-fluid {
+    padding: 7% 30%;
+  }
+
+  #projects {
+    padding-top: 8%;
+  }
 
   .tech-stack {
     position: relative;
     width: 150px;
-    height: 40px;
-    line-height: 48px;
+    height: 44px;
+    line-height: 42px;
     background: #000;
     text-transform: uppercase;
     font-size: 15px;
@@ -359,20 +368,34 @@ p {
     -webkit-box-reflect: none;
   }
 
-}
-
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-  #skills-section .container-fluid {
-    padding: 7% 35%;
+  .tech-stack:hover::after {
+    filter: blur(3px);
   }
+
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   #skills-section .container-fluid {
-    padding: 7% 2%;
+    padding: 7% 40%;
+  }
+
+  .tech-stack {
+    position: relative;
+    width: 150px;
+    height: 44px;
+    line-height: 42px;
+    background: #000;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    -webkit-box-reflect: none;
+  }
+
+  .tech-stack:hover::after {
+    filter: blur(2px);
   }
 }
 
