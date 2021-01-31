@@ -1,3 +1,3 @@
-# Portfolio
+# My Portfolio
 
-My website can be viewed [here](https://noelledons.github.io/noelledonkor/index.html)
+Click [here](https://noelledons.github.io/noelledonkor/index.html) to view my portfolio! :smile:
